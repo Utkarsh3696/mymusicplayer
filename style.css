@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Signika", sans-serif;
+
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+main{
+    overflow-y: hidden;
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+   
+    grid-template-areas: "lup ms ms ms ms ms "
+                          "llo ms ms ms ms ms "
+                          "llo ms ms ms ms ms "
+                          "llo ms ms ms ms ms "
+                           "f f f f f f ";
+                           
+                        gap: 5px;
+                        padding: 5px;
+
+    
+}
+.child{
+    background-color: #121212;
+    border-radius: 10px;
+}
+.child:nth-child(1){
+    grid-area: lup;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    padding: 10px;
+}
+.child:nth-child(1) div a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px ;
+    
+}
+.child:nth-child(2){
+    grid-area: llo;
+    height: 65vh;
+   
+}
+.child:nth-child(3){
+    grid-area: ms;
+}
+.child:nth-child(4){
+grid-area: f;
+border-radius: 0px;
+background-color: red;
+height: 80px;
+
+}
+.fa{
+    color: white;
+    font-size: 50px;
+    margin: 5px;
+    cursor: pointer;
+        
+}
+#home{
+    font-size: 20px;
+}
+#search{
+    font-size: 20px;
+   
+}
+#footer nav{
+    width: 5%;
+}
+#close{
+    display: none;
+}
+#footer
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#footer img{
+    margin: 10px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
+#songinfo{
+    color: white;
+    margin: 20px;
+    width: 15%;
+   
+
+}
+#controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+}
+
+
+.statusbar-tim{
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.musicstatus{
+   position: relative;
+   width: 100%;
+   height: 4px;
+   margin: 10px;
+   padding: auto;
+   
+}
+
+.music-track{
+  position:absolute;
+  background-color: #ddd;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+  
+}
+.music-fill{
+ position: absolute;
+ width: 0%;
+ height: 100%;
+ background-color: springgreen;
+ border-radius: 10px;
+ transition: width 0.2s;
+}
+.music-thumb{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    transform: translate(-0%, -0%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px ;
+    background-color: springgreen;
+    top: 0%;
+    left: 0%;
+    cursor: pointer;
+    transition: left 0.2s;
+}
+
+#extracontrols
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+    margin: 8px;
+}
+
+
+.fa:hover
+{
+
+ color: springgreen;
+ cursor: pointer;   
+}
+.status {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin: 100px auto;
+}
+
+.track {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 30px;
+
+}
+
+.fill {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: springgreen;
+    border-radius: 10px;
+    transition: width 0.2s;
+
+}
+
+
+
+.tumb {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: springgreen;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transition: left 0.2s;
+
+}
+
+input[type="hidden"] {
+    display: none;
+}
